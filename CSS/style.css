@@ -5,3 +5,17 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+p {
+  /* Tạo khoảng cách giữa các ký tự */
+  /* letter-spacing: 20px; */
+  /* Tạo khoảng cách giữa các từ */
+  /* word-spacing: 20px; */
+  text-align: justify;
+}
+
+.test {
+  text-align: center;
+  /* giúp cho mở rộng box chứa text ra bằng box cha (body) */
+  display: block;
+}
