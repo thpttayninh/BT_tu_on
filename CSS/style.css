@@ -19,3 +19,23 @@ p {
   /* giúp cho mở rộng box chứa text ra bằng box cha (body) */
   display: block;
 }
+
+.box {
+  /* Đặt chiều cao hình nền bằng trang web */
+  width: 600px;
+  height: 600px;
+  /* Thêm hình nền cho web */
+  background-image: url(../IMG/la_cay.png), url(../IMG/texture.jpg);
+  /* Lặp hình nền */
+  background-repeat: no-repeat;
+  background-position: 200px 0px;
+}
+
+.box1 {
+  width: 300px;
+  height: 300px;
+  /* Backup màu phòng trường hợp trình duyệt không nhận linear-gradient */
+  background-color: red;
+  /* Tạo dải màu */
+  background-image: linear-gradient(to top right, red 20%, blue);
+}
