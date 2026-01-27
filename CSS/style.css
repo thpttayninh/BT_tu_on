@@ -39,3 +39,27 @@ p {
   /* Tạo dải màu */
   background-image: linear-gradient(to top right, red 20%, blue);
 }
+
+.boxCounter {
+  /* tạo 1 biến đếm, reset = 0 */
+  counter-reset: section2;
+  padding: 10px;
+}
+h2 {
+  /* tăng biến đếm lên 1 */
+  counter-increment: section2;
+  color: red;
+  /* gặp thẻ h2 thì reset thẻ h3 về 0, vì h3 chạy từ 1 */
+  counter-reset: section3;
+}
+h2::before {
+  /* thêm trước thẻ h2 */
+  content: "Phần " counter(section2) ": ";
+}
+
+h3 {
+  counter-increment: section3;
+}
+h3::before {
+  content: counter(section2) "." counter(section3) ". ";
+}
