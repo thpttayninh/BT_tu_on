@@ -85,3 +85,35 @@ h2 {
   /* giúp điều chỉnh có chữ bao quanh cái ảnh cây */
   float: left;
 }
+/* 28/01/2026 */
+/* Flexbox CSS */
+* {
+  font-size: 1.5rem;
+}
+/* .container {
+  display: flex;
+  background-color: cyan;
+  tạo khoảng cách giữa các item
+  gap: 40px;
+} */
+/* Flexbox CSS justify-content và align-items */
+.containerJustiCon {
+  background-color: aquamarine;
+  height: 300px;
+  display: flex;
+  /* Căn nội dung cho class */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  justify-content: space-evenly;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: stretch; mặc định */
+  align-items: baseline;
+}
+.box {
+  background-color: blue;
+}
