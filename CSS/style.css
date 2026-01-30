@@ -117,3 +117,30 @@ h2 {
 .box {
   background-color: blue;
 }
+/* flex-wrap */
+.containerWrap {
+  height: 500px;
+  display: flex;
+  background-color: cyan;
+  /* Giá trị mặc định của flex-wrap là không cắt xuống dòng khi dài qua trang */
+  /* flex-wrap: nowrap; */
+  /* Cắt xuống dòng nếu vượt quá trang */
+  flex-wrap: wrap;
+  /* Cắt xuống dòng và đảo nghịch */
+  /* flex-wrap: wrap-reverse; */
+  /* align-content */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: stretch; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  align-content: space-evenly;
+  /* Phải kết hợp với flex-wrap, chỉ dùng cho 2 dòng trở lên, khác với align-items chỉ dùng cho 1 dòng */
+  /* Nếu không dùng align-content thì các phần tử con sẽ bị kéo giãn theo chiều cao của box cha (do chạy theo trục cross axis - trục dọc)*/
+}
+.boxGrap {
+  width: 30%;
+  background-color: blue;
+  border: 1px solid black;
+}
